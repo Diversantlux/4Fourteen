@@ -5,3 +5,33 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+
+body {
+
+}
+
+.page-main {
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        display: block;
+        width: 140px;
+        height: 30px;
+        background-color: white;
+    }
+    &-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        &__item {
+            margin-left: 15px;
+        }
+    }
+}
