@@ -11,9 +11,10 @@ body {
 }
 
 .page-main {
-    background-color: aqua;
+    background-image: url(../img/bg-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 900px;
 }
 
 .header {
@@ -32,6 +33,28 @@ body {
         justify-content: flex-end;
         &__item {
             margin-left: 15px;
+            color: white;
         }
+    }
+}
+
+.block-start {
+    text-align: center;
+}
+
+.block-text {
+    h1 {
+        color: white;
+        margin-top: 350px;
+        letter-spacing: 20px;
+    }
+    &__info {
+        color: white;
+        letter-spacing: 0.8px;
+        display: block;
+        width: 700px;
+        margin-left: 300px;
+        padding-top: 10px;
+        line-height: 30px;
     }
 }
