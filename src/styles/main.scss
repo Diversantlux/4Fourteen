@@ -21,6 +21,7 @@ body {
     background-size: cover;
     height: 900px;
     color: white;
+    padding-top: 30px;
 }
 
 .header {
@@ -33,17 +34,22 @@ body {
         display: block;
         width: 140px;
         height: 30px;
-        background-color: white;
+        color: white;
+        text-decoration: none;
+        letter-spacing: 5px;
+        font-size: 30px;
     }
     &-list {
         list-style-type: none;
         display: flex;
         justify-content: flex-end;
         &__item {
-            margin-left: 15px;   
+            margin-left: 20px;   
         }
         &__link {
-            color: aqua;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
         }
     }
 }
