@@ -6,6 +6,10 @@
 @import "base/general";
 @import "../blocks/modules";
 
+ul {
+    list-style-type: none;
+}
+
 body {
 
 }
@@ -13,6 +17,12 @@ body {
 .wrap {
     max-width: 1220px;
     margin: 0 auto;
+}
+.page {
+    background-color: #df3434;
+}
+.page-menu {
+    background-color: #f3f4f7;
 }
 
 .page-main {
@@ -66,6 +76,10 @@ body {
         margin-top: 350px;
         letter-spacing: 20px;
     }
+    h2 {
+        font-size: 30px;
+        text-align: center;
+    }
     &__info {
         
         letter-spacing: 0.8px;
@@ -74,5 +88,107 @@ body {
         margin: 0 auto;
         padding-top: 10px;
         line-height: 30px;
+        text-align: center;
+    }
+    &-title__top {
+        padding-top: 60px;
+    }
+    &__info-top {
+        margin-top: 50px;
+    }
+
+}
+
+.block-story {
+    display: flex;
+    justify-content: space-between;
+    height: 540px;
+    padding-top: 15%;
+    &-img {
+        display: block;
+        width: 450px;
+        height: 400px;
+        background-image: url(../img/img-story.jpg);
+        background-repeat: no-repeat;
+        
+        
+    }
+}
+.block-recept {
+    display: block;
+    position: relative;
+    height: 350px;
+    background-image: url(../img/bg-recept.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    &-info {
+        display: block;
+        position: absolute;
+        width: 500px;
+        height: 150px;
+        margin: 120px 25%;
+        color: white;
+    }
+}
+.block-menu {
+    display: block;
+    position: relative;
+    padding-top: 100px;
+    &-eat {
+        margin-top: 70px;
+        column-count: 2;
+        &__list {
+            
+            margin: 0 80px;
+           h3 {
+               padding-top: 50px;
+           } 
+        }
+        
+    }
+}
+.block-foto {
+    display: flex;
+    align-content: flex-start;
+    height: 370px;
+    &-img {
+        width: 480px;
+        height: 370px;
+        overflow: hidden;
+        
+        img {
+            width: 480px;
+            height: 370px;
+        }
+    }
+}
+.block-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 320px;
+    background-color: #25262a;
+    color: white;
+    h3 {
+        font-size: 25px;
+        padding-bottom: 40px;
+    }
+    h4 {
+        padding-bottom: 45px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        
+    }
+    &-text {
+        width: 350px;
+        letter-spacing: 1px;
+    }
+    &-item {
+        letter-spacing: 0.7px;
+        &__list {
+            text-decoration: none;
+            color: white;
+            line-height: 30px;
+        }
     }
 }
